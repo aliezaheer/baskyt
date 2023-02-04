@@ -59,7 +59,7 @@ const HomePage = () => {
     ],
   });
   return (
-    <div>
+    <div className="rightArea">
       <Filter />
       <div className="cardAndChart">
         <StatsCard statsData={statsData} />
