@@ -15,6 +15,7 @@ import StatsCard from "./StatsCard";
 import Chart from "./Chart";
 import Filter from "./Filter";
 import TopCutomerCard from "./TopCutomerCard";
+import { NavLink } from "react-router-dom";
 
 const ContainerCust = styled(Box)`
   margin-top: 0px;
@@ -53,6 +54,8 @@ export default function SideBar() {
     iconFour,
   ];
 
+  const updatedList = list.slice(1);
+
   return (
     <>
       <MainContainer>
@@ -67,7 +70,16 @@ export default function SideBar() {
                     justifyContent: "center",
                   }}
                 >
-                  {list.map((listItem, index) => (
+                  <NavLink to={`/`}>
+                    <ImgIcons
+                      className="homeIcon"
+                      key={0}
+                      src={list[0]}
+                      alt=""
+                    />
+                  </NavLink>
+
+                  {updatedList.map((listItem, index) => (
                     <ImgIcons key={index} src={listItem} alt="" />
                   ))}
                 </ListItemCust>

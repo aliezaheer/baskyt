@@ -9,6 +9,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 import profileImg from "../assets/profile.jpg";
 import logo from "../assets/logo.png";
+import { NavLink } from "react-router-dom";
 
 const NavBarCust = styled(AppBar)`
   background: #283848;
@@ -19,19 +20,19 @@ export default function NavBar() {
   return (
     <NavBarCust position="static">
       <Toolbar>
-        
+        <NavLink to="/">
           <img src={logo} alt="" className="logo" />
+        </NavLink>
 
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon className="hamburgerMenu" />
-          </IconButton>
-    
+        <IconButton
+          size="large"
+          edge="start"
+          color="inherit"
+          aria-label="open drawer"
+          sx={{ mr: 2 }}
+        >
+          <MenuIcon className="hamburgerMenu" />
+        </IconButton>
 
         <Typography
           variant="h6"

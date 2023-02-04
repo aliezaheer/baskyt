@@ -19,7 +19,12 @@ a {
 }
 
 .iconImg {
-  width: 30px;
+  width: 35px;
+}
+
+.homeIcon {
+  margin-top: 15px;
+  width: 27px !important;
 }
 
 .logo {
@@ -193,6 +198,7 @@ a {
   padding: 5px 20px 5px 20px !important;
 }
 
+/* company insight  */
 .mainArea {
   display: flex;
 }
@@ -205,6 +211,54 @@ a {
 
 .rightArea {
   width: 100%;
+}
+
+.companyInsightContainer {
+  background: #fff;
+  width: 30%;
+  margin: auto;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 25px;
+}
+
+.percentageContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.cutmBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.cutsmBtn {
+  margin: auto !important;
+  background: #fcaf3c !important;
+  color: #fff !important;
+  border-radius: 100px !important;
+  padding: 8px 35px 8px 35px !important;
+  margin-bottom: 30px !important;
+}
+.cutsmBtn:hover {
+  background: #fcba56 !important;
+}
+
+.percentValue {
+  font-weight: 600;
+  color: #606060;
+  font-size: 22px;
+  margin: 10px 15 0 0;
+}
+
+.iconBox {
+  width: 20%;
+  margin: 40px 0 0 0;
+}
+.iconCotainer {
+  display: flex;
+  justify-content: center;
 }
 
 /* responsive */
