@@ -6,7 +6,9 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
+
 import profileImg from "../assets/profile.jpg";
+import logo from "../assets/logo.png";
 
 const NavBarCust = styled(AppBar)`
   background: #283848;
@@ -17,15 +19,20 @@ export default function NavBar() {
   return (
     <NavBarCust position="static">
       <Toolbar>
-        <IconButton
-          size="large"
-          edge="start"
-          color="inherit"
-          aria-label="open drawer"
-          sx={{ mr: 2 }}
-        >
-          <MenuIcon />
-        </IconButton>
+        
+          <img src={logo} alt="" className="logo" />
+
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="open drawer"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon className="hamburgerMenu" />
+          </IconButton>
+    
+
         <Typography
           variant="h6"
           noWrap

@@ -22,6 +22,16 @@ a {
   width: 30px;
 }
 
+.logo {
+  width: 2.7rem;
+  margin-right: 40px;
+}
+
+.hamburgerMenu {
+  font-size: 2.3rem !important;
+  margin-top: 3px;
+}
+
 /* StatsCard component file  */
 .mainStatWrapper {
   width: 100%;
