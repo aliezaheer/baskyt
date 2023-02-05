@@ -4,6 +4,7 @@ import CompanyInsights from "./components/pages/CompanyInsights";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
+import InsightContainer from "./components/pages/InsightContainer";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <SideBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/company-insight" element={<CompanyInsights />} />
+          <Route path="/company-insight" element={<InsightContainer />} />
         </Routes>
       </div>
     </BrowserRouter>

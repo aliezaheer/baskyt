@@ -46,7 +46,7 @@ a {
 .statsContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: flex-start;
   width: 100%;
   height: 180px;
   margin-top: 35px;
@@ -110,7 +110,7 @@ a {
   border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: flex-start;
   width: 100%;
   height: 180px;
   margin-top: 35px;
@@ -203,22 +203,20 @@ a {
   display: flex;
 }
 
-.companyInsightComponent {
-  margin: auto;
-  font-size: 50px;
-  text-align: center;
-}
-
 .rightArea {
   width: 100%;
 }
 
 .companyInsightContainer {
-  background: #fff;
-  width: 30%;
-  margin: auto;
-  box-shadow: 0px 3px 6px #00000029;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
   border-radius: 25px;
+}
+
+.companyInsight {
+  width: calc(100% / 3);
 }
 
 .percentageContainer {
@@ -259,6 +257,19 @@ a {
 .iconCotainer {
   display: flex;
   justify-content: center;
+}
+
+.insightMainContainer {
+  display: flex;
+  width: 100%;
+}
+
+.itemtest {
+  background: #fff;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 25px;
+  width: 90%;
+  margin: 20px;
 }
 
 /* responsive */

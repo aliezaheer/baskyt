@@ -1,5 +1,4 @@
 import React from "react";
-import Filter from "./Filter";
 
 const StatsCard = (props) => {
   const { statsData } = props;

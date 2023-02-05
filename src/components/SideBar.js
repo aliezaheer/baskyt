@@ -11,10 +11,6 @@ import iconFour from "../assets/Group 4282.svg";
 import iconSix from "../assets/levels&bonuses_icon.svg";
 import iconSeven from "../assets/Mask Group 29.svg";
 
-import StatsCard from "./StatsCard";
-import Chart from "./Chart";
-import Filter from "./Filter";
-import TopCutomerCard from "./TopCutomerCard";
 import { NavLink } from "react-router-dom";
 
 const ContainerCust = styled(Box)`
